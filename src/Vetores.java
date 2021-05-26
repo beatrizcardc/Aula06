@@ -10,13 +10,14 @@ public class Vetores {
 		System.out.println("Digite a quantidade de alunos na turma:");
 		quantidadeAlunos = leitor.nextInt();
 		
-		double totalConsumo = 0; // ZERANDO
+		double totalConsumo = 0; // ZERANDO. Essa varíavel que recebe a soma do total do consumo precisa ser criada fora do FOR porque senão zeraria a soma a cada loop e só retornaria como resultado o último valor digitado, e nunca uma soma.
 		
 		for ( int i = 0; i < quantidadeAlunos; i++ ) {
 			int numeroAluno = i + 1; // TODO
 			System.out.println("Por favor, digite o consumo do " + numeroAluno +  "º aluno");
 			double valorConsumo = leitor.nextDouble();
 			System.out.println("O aluno " + numeroAluno + " consumiu R$ " + valorConsumo);
+			//aqui iria a variável double totalConsumo = 0; mas só retornaria o último valor digitado e nunca a soma.
 			totalConsumo += valorConsumo;
 		}
 		
