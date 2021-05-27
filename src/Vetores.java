@@ -32,7 +32,6 @@ public class Vetores {
 			System.out.println("O consumo do aluno " + numeroAluno + " foi de R$" + valores[i]);
 		}
 		
-		
 		System.out.println("*********Total R$: " + totalConsumo); //esse também fica fora do for para imprimir uma vez só
 		
 		leitor.close();
